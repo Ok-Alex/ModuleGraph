@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/graphs_layout"
+              android:orientation="horizontal"
+              android:padding="10dp"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@android:color/white"
+                android:weightSum="100">
+
+
+
+                  <FrameLayout
+                      android:orientation="vertical"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_weight="33">
+
+                      <me.akulakovsky.stanfy.graph.views.VerticalProgressBar
+                              style="?android:attr/progressBarStyleHorizontal"
+                              android:id="@+id/internal_bar"
+                              android:layout_width="50dp"
+                              android:layout_gravity="center_horizontal"
+                              android:progress="30"
+                              android:progressDrawable="@drawable/bar_internal"
+                              android:layout_marginBottom="20dp"
+                              android:layout_marginTop="20dp"
+                              android:layout_height="match_parent"/>
+
+                      <TextView
+                              android:id="@+id/internal_memory_total"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_gravity="center_horizontal"
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:text="0 MB / 0 MB"/>
+
+                      <TextView
+                              android:id="@+id/internal_memory"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_gravity="bottom|center_horizontal"
+                              android:textColor="@android:color/black"
+                              android:textStyle="bold"
+                              android:text="Internal"/>
+
+                  </FrameLayout>
+
+                <FrameLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="33">
+
+                    <me.akulakovsky.stanfy.graph.views.VerticalProgressBar
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:id="@+id/external_bar"
+                            android:layout_width="50dp"
+                            android:layout_gravity="center_horizontal"
+                            android:progress="0"
+                            android:progressDrawable="@drawable/bar_external"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_height="match_parent"/>
+
+                    <TextView
+                            android:id="@+id/external_memory_total"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold"
+                            android:text="0 MB / 0 MB"/>
+
+                    <TextView
+                            android:id="@+id/external_memory"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold"
+                            android:text="External"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="33">
+
+                    <me.akulakovsky.stanfy.graph.views.VerticalProgressBar
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:id="@+id/ram_bar"
+                            android:layout_width="50dp"
+                            android:layout_gravity="center_horizontal"
+                            android:progress="15"
+                            android:progressDrawable="@drawable/bar_ram"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_height="match_parent"/>
+
+                    <TextView
+                            android:id="@+id/ram_memory_total"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold"
+                            android:text="0 MB / 0 MB"/>
+
+                    <TextView
+                            android:id="@+id/ram_memory"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold"
+                            android:text="RAM"/>
+
+                </FrameLayout>
+
+
+
+
+
+</LinearLayout>

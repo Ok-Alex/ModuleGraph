@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="me.akulakovsky.stanfy.graph"
+          android:versionCode="1"
+          android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="8"/>
+
+    <permission android:name="me.akulakovsky.stanfy.MODULE"
+                android:label="Stanfy module"
+                android:protectionLevel="dangerous" />
+
+    <application android:label="@string/app_name" android:theme="@style/Theme.Sherlock.Light" android:icon="@drawable/ic_launcher">
+        <activity android:name="MyActivity"
+                  android:label="@string/app_name"
+                  android:exported="true"
+                  android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="me.akulakovsky.stanfy.graph.SHOW"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
+
